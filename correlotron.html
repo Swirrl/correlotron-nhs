@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>THE MYNHS CORRELOTRON</title>
+    <link rel="stylesheet" href="scatter.css" charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" charset="utf-8">
+
+  </head>
+  <body style="padding:20px">
+
+    <table>
+      
+        <tr><td class='cell'>X-AXIS</td><td class='cell'><select id="x_select">
+            <option selected="selected" value="IMDRank">Deprivation - IMD Rank</option>
+            <option value="ind1value">Proportion of budget spent on agency staff</option>
+            <option value="ind2value">A & E Waiting Times</option>
+            <option value="ind3value">Financial performance</option>
+            <option value="ind4value">% Of Staff who would recommend hospital to friends and family</option>
+          </select></td></tr>
+        <tr><td class='cell'>Y-AXIS</td><td class='cell'><select id="y_select">
+            <option value="IMDRank">Deprivation - IMD Rank</option>
+            <option value="ind1value">Proportion of budget spent on agency staff</option>
+            <option selected="selected" value="ind2value">A & E Waiting Times</option>
+            <option value="ind3value">Financial performance</option>
+            <option value="ind4value">% Of Staff who would recommend hospital to friends and family</option>
+          </select></td></tr>
+        <tr><td class='cell'>SIZE</td><td class='cell'><select id="r_select">
+            <option value="IMDRank">Deprivation - IMD Rank</option>
+            <option value="ind1value">Proportion of budget spent on agency staff</option>
+            <option value="ind2value">A & E Waiting Times</option>
+            <option selected="selected" value="ind4value">% Of Staff who would recommend hospital to friends and family</option>
+          </select></td></tr>
+        <tr><td class='cell'></td><td class='cell'><input type="button" name="xAxis" value="GO!"></td></tr>
+      
+      
+      </table>
+      
+      
+      
+      
+    
+    <div id="scatter"></div>
+    
+    
+
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script src="scatter.js" charset="utf-8"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" charset="utf-8"></script>
+  </body>
+</html>
